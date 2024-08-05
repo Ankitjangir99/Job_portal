@@ -1,5 +1,5 @@
 .page-title-box {
-  background-image: url(../../../assets/images/page-title.png);
+  background-image: url(../../../public//assets/images/page-title.png);
   background-size: cover;
   background-color: #4a4949;
   position: relative;
@@ -7,6 +7,7 @@
   padding-bottom: 80px;
   background-position: center;
 }
+/* fjfgjj */
 .shape {
   position: absolute;
   bottom: 0;
