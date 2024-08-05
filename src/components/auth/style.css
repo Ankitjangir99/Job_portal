@@ -1,0 +1,80 @@
+.page-title-box {
+  background-image: url(../../../assets/images/page-title.png);
+  background-size: cover;
+  background-color: #ec385a;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background-position: center;
+}
+.shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}
+.shape > svg {
+  width: 100%;
+  height: auto;
+}
+.shape > svg path {
+  fill: #fff !important;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.breadcrumb .breadcrumb-item::before {
+  content: "\f0142";
+  font-size: 14px;
+  color: #fff;
+  font-family: "Material Design Icons";
+  padding-left: 8px;
+}
+.breadcrumb .breadcrumb-item:first-child::before {
+  content: "";
+}
+.breadcrumb-item.active {
+  color: #e2e5e8;
+}
+.sidebar-page-container {
+  position: relative;
+  padding: 50px 0px 50px;
+}
+form#loginform {
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 35px rgb(0 0 0 / 5%);
+  padding: 35px 40px 20px;
+}
+.form-group {
+  margin-bottom: 30px;
+}
+.form-group label {
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+.form-group input.form-control {
+  height: 50px;
+}
+.login-remember * {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  gap: 10px;
+}
+.login-remember {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+input#inputGroupFile01 {
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 10px;
+}

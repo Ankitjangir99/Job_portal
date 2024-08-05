@@ -1,0 +1,131 @@
+.main-header {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  box-shadow: 0px 3px 10px 0px rgba(40, 48, 57, 0.08);
+}
+.main-header .outer-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-header .outer-box .logo-box {
+  position: relative;
+  padding: 25px 0px;
+}
+/* img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+} */
+.btn-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.theme-btn-one {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: normal;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: #ec385a;
+  z-index: 1;
+  transition: all 500ms ease;
+  border: none;
+}
+.theme-btn-two {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: normal;
+  font-weight: 600;
+  color: #ec385a;
+  text-align: center;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 1;
+  transition: all 500ms ease;
+  border: 1px solid #ec385a;
+}
+.main-header .navbar-nav .nav-link {
+  font-size: 13px;
+  background-color: transparent;
+  padding: 23px 18px !important;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: 600;
+}
+.filter-search-form {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+.filter-search-form .form-control {
+  position: relative;
+  box-shadow: none !important;
+  border: 0;
+  font-size: 15px;
+  height: 60px;
+  padding: 16px 96px 15px 45px;
+}
+.search_btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 60px;
+}
+.bg-home2 {
+  padding: 150px 0 140px 0;
+  background-color: rgb(236 56 91 / 5%);
+  overflow-x: clip;
+}
+.text-content {
+  color: #ec385a;
+}
+.latest_job {
+  padding: 100px 0;
+}
+.job-list-menu {
+  background-color: #fff;
+  -webkit-box-shadow: var(--bs-box-shadow);
+  box-shadow: 0px 3px 10px 0px rgba(40, 48, 57, 0.08);
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.job-list-menu .nav-link.active {
+  background-color: #ec385a;
+}
+.job-list-menu .nav-link {
+  color: #000;
+}
+.card.job-grid-box {
+  box-shadow: 0px 3px 10px 0px rgba(40, 48, 57, 0.08);
+  border: none;
+}
+.primary-link h5 {
+  color: #ec385a;
+}
