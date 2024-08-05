@@ -39,7 +39,7 @@ img {
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-  background: #ec385a;
+  background: #4a4949;
   color: #fff;
   opacity: 1;
   padding: 12px 29px;
@@ -50,5 +50,5 @@ img {
 } */
 .form-group input.form-control:focus {
   box-shadow: none;
-  border: 1px solid #ec385a;
+  border: 1px solid #4a4949;
 }

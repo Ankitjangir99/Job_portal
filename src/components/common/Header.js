@@ -33,7 +33,7 @@ const Header = () => {
                     >
                       <li id='#' className='nav-item'>
                         <a
-                          href='#'
+                          href='/'
                           aria-haspopup='true'
                           aria-expanded='false'
                           className='nav-link'
@@ -57,11 +57,11 @@ const Header = () => {
                 </nav>
               </div>
               <div className='btn-box'>
-                <a href='#' className='theme-btn-two'>
+                <a href='/login' className='theme-btn-two'>
                   <i className='las la-user'></i>Login
                 </a>
 
-                <a href='#' className='theme-btn-one'>
+                <a href='/signup' className='theme-btn-one'>
                   Signup
                 </a>
                 <div className='list-inline-item dropdown'>
@@ -73,7 +73,7 @@ const Header = () => {
                     aria-expanded='true'
                   >
                     <img
-                      src='/assets/images/profile.jpg'
+                      src='assets/images/profile.jpg'
                       alt=''
                       width='35'
                       height='35'

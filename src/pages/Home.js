@@ -1,6 +1,6 @@
 import React from 'react'
 import JobCard from '../components/common/JobCard'
-import Header from '../components/common/Header'
+// import Header from '../components/common/Header'
 import '@mui/material'
 import SearchIcon from '@mui/icons-material/Search'
 

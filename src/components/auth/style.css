@@ -1,7 +1,7 @@
 .page-title-box {
   background-image: url(../../../assets/images/page-title.png);
   background-size: cover;
-  background-color: #ec385a;
+  background-color: #4a4949;
   position: relative;
   padding-top: 50px;
   padding-bottom: 80px;
@@ -50,7 +50,7 @@ form#loginform {
   padding: 35px 40px 20px;
 }
 .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .form-group label {
   color: #000;
@@ -64,13 +64,16 @@ form#loginform {
 .login-remember * {
   display: flex;
   align-items: center;
-  margin: 10px 0px;
+  margin: 0px 0px;
   gap: 10px;
 }
 .login-remember {
   display: flex;
   gap: 30px;
   align-items: center;
+}
+.login-submit{
+  margin-top: 20px;
 }
 input#inputGroupFile01 {
   display: flex;
