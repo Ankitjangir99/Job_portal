@@ -48,7 +48,11 @@ const Header = () => {
                         </a>
                       </li>
                       <li id='#' className='nav-item'>
-                        <a href='#' aria-haspopup='true' className='nav-link'>
+                        <a
+                          href='/brouse'
+                          aria-haspopup='true'
+                          className='nav-link'
+                        >
                           Browse
                         </a>
                       </li>
@@ -67,7 +71,7 @@ const Header = () => {
                 <div className='list-inline-item dropdown'>
                   <a
                     href='javascript:void(0)'
-                    className='header-item show'
+                    className='header-item '
                     id='userdropdown'
                     data-bs-toggle='dropdown'
                     aria-expanded='true'
@@ -84,7 +88,7 @@ const Header = () => {
                     </span>
                   </a>
                   <ul
-                    className='dropdown-menu dropdown-menu-end '
+                    className='dropdown-menu'
                     aria-labelledby='userdropdown'
                     data-bs-popper='static'
                   >
