@@ -43,7 +43,11 @@ const Header = () => {
                       </li>
 
                       <li id='#' className='nav-item'>
-                        <a href='#' aria-haspopup='true' className='nav-link'>
+                        <a
+                          href='/Jobs'
+                          aria-haspopup='true'
+                          className='nav-link'
+                        >
                           Jobs
                         </a>
                       </li>

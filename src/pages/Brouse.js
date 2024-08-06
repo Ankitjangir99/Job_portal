@@ -172,7 +172,7 @@ const Brouse = () => {
                       </li>
                     </ul>
                     <div className='job_btn'>
-                      <a href='#' className='theme-btn-two'>
+                      <a href='/jobDetail' className='theme-btn-two'>
                         Detail
                       </a>
                       <a href='#' className='theme-btn-one'>
@@ -233,7 +233,7 @@ const Brouse = () => {
                       </li>
                     </ul>
                     <div className='job_btn'>
-                      <a href='#' className='theme-btn-two'>
+                      <a href='/jobDetail' className='theme-btn-two'>
                         Detail
                       </a>
                       <a href='#' className='theme-btn-one'>
@@ -294,7 +294,7 @@ const Brouse = () => {
                       </li>
                     </ul>
                     <div className='job_btn'>
-                      <a href='#' className='theme-btn-two'>
+                      <a href='/jobDetail' className='theme-btn-two'>
                         Detail
                       </a>
                       <a href='#' className='theme-btn-one'>
@@ -355,7 +355,7 @@ const Brouse = () => {
                       </li>
                     </ul>
                     <div className='job_btn'>
-                      <a href='#' className='theme-btn-two'>
+                      <a href='/jobDetail' className='theme-btn-two'>
                         Detail
                       </a>
                       <a href='#' className='theme-btn-one'>
@@ -416,7 +416,7 @@ const Brouse = () => {
                       </li>
                     </ul>
                     <div className='job_btn'>
-                      <a href='#' className='theme-btn-two'>
+                      <a href='/jobDetail' className='theme-btn-two'>
                         Detail
                       </a>
                       <a href='#' className='theme-btn-one'>
@@ -477,7 +477,7 @@ const Brouse = () => {
                       </li>
                     </ul>
                     <div className='job_btn'>
-                      <a href='#' className='theme-btn-two'>
+                      <a href='/jobDetail' className='theme-btn-two'>
                         Detail
                       </a>
                       <a href='#' className='theme-btn-one'>
@@ -538,7 +538,7 @@ const Brouse = () => {
                       </li>
                     </ul>
                     <div className='job_btn'>
-                      <a href='#' className='theme-btn-two'>
+                      <a href='/jobDetail' className='theme-btn-two'>
                         Detail
                       </a>
                       <a href='#' className='theme-btn-one'>
@@ -599,7 +599,7 @@ const Brouse = () => {
                       </li>
                     </ul>
                     <div className='job_btn'>
-                      <a href='#' className='theme-btn-two'>
+                      <a href='/jobDetail' className='theme-btn-two'>
                         Detail
                       </a>
                       <a href='#' className='theme-btn-one'>
@@ -660,7 +660,7 @@ const Brouse = () => {
                       </li>
                     </ul>
                     <div className='job_btn'>
-                      <a href='#' className='theme-btn-two'>
+                      <a href='/jobDetail' className='theme-btn-two'>
                         Detail
                       </a>
                       <a href='#' className='theme-btn-one'>
