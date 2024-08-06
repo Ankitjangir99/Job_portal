@@ -1,8 +1,8 @@
 import React from 'react'
 import JobCard from '../components/common/JobCard'
 // import Header from '../components/common/Header'
-import '@mui/material'
-import SearchIcon from '@mui/icons-material/Search'
+// import '@mui/material'
+// import SearchIcon from '@mui/icons-material/Search'
 
 export const Home = () => {
   return (
@@ -39,7 +39,7 @@ export const Home = () => {
                           id='searchBtn'
                           className='search_btn theme-btn-one'
                         >
-                          <SearchIcon />
+                          {/* <SearchIcon /> */}
                         </button>
                       </div>
                     </div>

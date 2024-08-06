@@ -1,5 +1,5 @@
 .page-title-box {
-  background-image: url(../../../assets/images/page-title.png);
+  background-image: url(../../../public/assets/images/page-title.png);
   background-size: cover;
   background-color: #4a4949;
   position: relative;
@@ -72,7 +72,7 @@ form#loginform {
   gap: 30px;
   align-items: center;
 }
-.login-submit{
+.login-submit {
   margin-top: 20px;
 }
 input#inputGroupFile01 {
@@ -80,4 +80,121 @@ input#inputGroupFile01 {
   align-items: center;
   height: auto;
   padding: 10px;
+}
+.browse_sec {
+  padding: 50px 0;
+}
+.list-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-radius: 0.3rem;
+  background: #ffffff;
+  padding: 10px;
+}
+.item-flex {
+  display: flex;
+  /* gap: 20px; */
+  align-items: center;
+}
+.item-flex:first-child {
+  order: 1;
+}
+.arch-post-count {
+  flex: auto;
+  color: var(--secondary);
+  font-size: 14px;
+}
+.sorter-arch .arch-post-count {
+  border-right: 0;
+  border-left: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+span.shortby {
+  margin-right: 18px;
+  color: #999999;
+}
+.item-flex .dropdown {
+  background-color: #f4f4f4;
+  width: 200px;
+  border-radius: 5px;
+  padding: 7px 15px;
+  color: #000;
+}
+.item-flex .dropdown a {
+  color: #000;
+}
+.item-flex .dropdown-toggle::after {
+  right: 15px;
+  position: absolute;
+  top: 18px;
+}
+.toggle-sidebar-close,
+#sidebar-filter {
+  margin-left: 15px;
+  font-weight: 700;
+  font-size: 15px;
+  display: none;
+  color: #fff;
+  background-color: #000;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+#sidebar-filter i {
+  margin-right: 2px;
+}
+.list-inline {
+  margin-bottom: 20px;
+}
+.item-flex .list-inline-item a {
+  background-color: #ededed;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+  color: #000;
+}
+.item-flex .list-inline-item a.active {
+  background-color: #ec385a;
+  color: #fff;
+}
+.item-flex .list-inline-item a span {
+  display: none;
+}
+
+.job_btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.job-grid-box .favorite-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.favorite-icon a {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  line-height: normal;
+  text-align: center;
+  border: 1px solid #eff0f2;
+  border-radius: 6px;
+  color: rgba(173, 181, 189, 0.55);
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+}
+.job-grid-box.active .favorite-icon a {
+  background-color: #da3746;
+  color: #fff;
+  border-color: #da3746;
 }
