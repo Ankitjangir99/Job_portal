@@ -4,6 +4,7 @@ import 'react-icons'
 import { LuLayoutGrid } from 'react-icons/lu'
 import { FaList } from 'react-icons/fa6'
 import { FaRegHeart } from 'react-icons/fa'
+
 const Jobs = () => {
   return (
     <>
