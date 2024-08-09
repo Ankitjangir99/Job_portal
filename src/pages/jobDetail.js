@@ -16,15 +16,17 @@ const jobDetail = () => {
                   >
                     <ol className='breadcrumb justify-content-center'>
                       <li className='breadcrumb-item'>
-                        <a href='#'>Home</a>
+                        <a href='/'>Home</a>
                       </li>
-
+                      <li className='breadcrumb-item'>
+                        <a href='/jobs'>jobs</a>
+                      </li>
                       <li
                         className='breadcrumb-item active'
                         aria-current='page'
                       >
                         {' '}
-                        Jobs{' '}
+                        jobdetail{' '}
                       </li>
                     </ol>
                   </nav>
@@ -95,7 +97,7 @@ const jobDetail = () => {
                       </div>
                     </div>
                     <div className='apply_btn'>
-                      <a href='#' className='theme-btn-one'>
+                      <a href='/AddCompany' className='theme-btn-one'>
                         Apply now
                       </a>
                     </div>

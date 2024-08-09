@@ -47,7 +47,7 @@ const router = createBrowserRouter([
         element: <Profile />
       },
       {
-        path: 'admin/companies',
+        path: 'companies',
         element: <Company />
       },
       {
@@ -55,11 +55,11 @@ const router = createBrowserRouter([
         element: <AdminJobs />
       },
       {
-        path: 'admin/addjob',
+        path: 'addjob',
         element: <Addjob />
       },
       {
-        path: 'admin/addcompany',
+        path: 'addcompany',
         element: <AddCompany />
       },
       {

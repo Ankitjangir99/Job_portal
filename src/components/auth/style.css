@@ -26,12 +26,17 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
 .breadcrumb .breadcrumb-item::before {
-  content: "\f0142";
+  content: "\f054";
   font-size: 14px;
   color: #fff;
-  font-family: "Material Design Icons";
+  font-family: "Font Awesome 5 Free";
   padding-left: 8px;
+  font-weight: 900;
 }
 .breadcrumb .breadcrumb-item:first-child::before {
   content: "";
@@ -285,4 +290,67 @@ span.shortby {
 .civi-description-details ul li {
   list-style: disc;
   margin-bottom: 16px;
+}
+.company_search .card {
+  box-shadow: 0px 3px 10px 0px rgba(40, 48, 57, 0.08);
+  border: none;
+}
+.Visitor-card-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_text {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #8392ab !important;
+  padding: 0.75rem 1.5rem !important;
+}
+.table {
+  vertical-align: middle;
+}
+.tbody_text {
+  font-size: 14px;
+  color: #8392ab !important;
+  padding: 0.75rem 1.5rem !important;
+}
+.tbody_text img {
+  max-width: 30px;
+}
+.list-unstyled {
+  display: flex;
+  flex-direction: column;
+}
+.list-unstyled li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.list-unstyled li i {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit_modal .modal-body {
+  padding: 0;
+  position: relative;
+}
+.edit_modal .btn-link {
+  position: absolute;
+  right: -13px;
+  top: -15px;
+  font-size: 20px;
+  padding: 0;
+  background: #da3746;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.edit_modal .btn-link svg {
+  color: #fff;
 }
