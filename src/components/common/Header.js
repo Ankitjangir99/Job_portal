@@ -44,7 +44,11 @@ const Header = () => {
                       </li>
 
                       <li id='#' className='nav-item'>
-                        <a href='#' aria-haspopup='true' className='nav-link'>
+                        <a
+                          href='/Jobs'
+                          aria-haspopup='true'
+                          className='nav-link'
+                        >
                           Jobs
                         </a>
                       </li>
@@ -99,17 +103,7 @@ const Header = () => {
                     data-bs-popper='static'
                   >
                     <li>
-                      <a className='dropdown-item' href='manage-jobs.html'>
-                        Manage Jobs
-                      </a>
-                    </li>
-                    <li>
-                      <a className='dropdown-item' href='bookmark-jobs.html'>
-                        Bookmarks Jobs
-                      </a>
-                    </li>
-                    <li>
-                      <a className='dropdown-item' href='profile.html'>
+                      <a className='dropdown-item' href='/profile'>
                         My Profile
                       </a>
                     </li>

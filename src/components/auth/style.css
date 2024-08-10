@@ -27,12 +27,17 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
 .breadcrumb .breadcrumb-item::before {
-  content: "\f0142";
+  content: "\f054";
   font-size: 14px;
   color: #fff;
-  font-family: "Material Design Icons";
+  font-family: "Font Awesome 5 Free";
   padding-left: 8px;
+  font-weight: 900;
 }
 .breadcrumb .breadcrumb-item:first-child::before {
   content: "";
@@ -198,4 +203,155 @@ span.shortby {
   background-color: #da3746;
   color: #fff;
   border-color: #da3746;
+}
+.inner-filter {
+  width: 330px;
+  margin-right: 70px;
+  background-color: #fff;
+  box-shadow: 0px 3px 10px 0px rgba(40, 48, 57, 0.08);
+  padding: 24px;
+  border-radius: 16px;
+}
+.civi-nav-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.archive-layout .civi-filter-toggle > span {
+  font-size: 18px;
+  color: #111111;
+}
+.inner-filter .entry-filter {
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+  margin-top: 24px;
+}
+.inner-filter .entry-filter h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+.inner-filter .entry-filter ul.custom-scrollbar {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.inner-filter .entry-filter ul.custom-scrollbar label {
+  padding-left: 8px;
+}
+.title-jobs {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.list-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.icon-jobs {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 116, 86, 0.05);
+  color: #da3746;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-jobs svg {
+  color: #da3746;
+}
+.info {
+  margin-left: 12px;
+}
+.title-info {
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.details-info {
+  text-transform: capitalize;
+}
+.civi-description-details .wp-block-heading {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.civi-description-details p {
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+.civi-description-details ul {
+  padding-left: 15px;
+}
+.civi-description-details ul li {
+  list-style: disc;
+  margin-bottom: 16px;
+}
+.company_search .card {
+  box-shadow: 0px 3px 10px 0px rgba(40, 48, 57, 0.08);
+  border: none;
+}
+.Visitor-card-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_text {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #8392ab !important;
+  padding: 0.75rem 1.5rem !important;
+}
+.table {
+  vertical-align: middle;
+}
+.tbody_text {
+  font-size: 14px;
+  color: #8392ab !important;
+  padding: 0.75rem 1.5rem !important;
+}
+.tbody_text img {
+  max-width: 30px;
+}
+.list-unstyled {
+  display: flex;
+  flex-direction: column;
+}
+.list-unstyled li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.list-unstyled li i {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit_modal .modal-body {
+  padding: 0;
+  position: relative;
+}
+.edit_modal .btn-link {
+  position: absolute;
+  right: -13px;
+  top: -15px;
+  font-size: 20px;
+  padding: 0;
+  background: #da3746;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.edit_modal .btn-link svg {
+  color: #fff;
 }

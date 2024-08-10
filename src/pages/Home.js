@@ -1,8 +1,6 @@
 import React from 'react'
 import JobCard from '../components/common/JobCard'
-// import Header from '../components/common/Header'
-// import '@mui/material'
-// import SearchIcon from '@mui/icons-material/Search'
+import { IoSearch } from 'react-icons/io5'
 
 export const Home = () => {
   return (
@@ -39,7 +37,7 @@ export const Home = () => {
                           id='searchBtn'
                           className='search_btn theme-btn-one'
                         >
-                          {/* <SearchIcon /> */}
+                          <IoSearch className='fs-3' />
                         </button>
                       </div>
                     </div>
