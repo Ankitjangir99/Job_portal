@@ -2,6 +2,7 @@ import React from 'react'
 import '../common/style.css'
 
 const Header = () => {
+  const user = false;
   return (
     <>
       <header className='main-header header-style-1'>
@@ -65,14 +66,19 @@ const Header = () => {
                 </nav>
               </div>
               <div className='btn-box'>
-                <a href='/login' className='theme-btn-two'>
+                {
+                  !user ? 
+                   (
+                    <div className='user-div'>
+                   <a href='/login' className='theme-btn-two'>
                   <i className='las la-user'></i>Login
                 </a>
 
                 <a href='/signup' className='theme-btn-one'>
                   Signup
                 </a>
-                <div className='list-inline-item dropdown'>
+                </div>
+                ) :  (<div className='list-inline-item dropdown'>
                   <a
                     href='javascript:void(0)'
                     className='header-item '
@@ -108,6 +114,9 @@ const Header = () => {
                     </li>
                   </ul>
                 </div>
+               ) }
+               
+               
               </div>
             </div>
           </div>

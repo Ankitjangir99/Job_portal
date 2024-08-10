@@ -1,7 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../auth/style.css'
+import axios from "axios"
+import "../auth/style.css";
+import { MainUrl } from "../../api/apiHelper";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const [input, setInput] = useState({
+    email: "",
+    password: "",
+    role: "",
+  });
+
+  const navigate = useNavigate();
+
+  const changeEventHandler = (e) => {
+    setInput({ ...input, [e.target.name]: e.target.value });
+  };
+
+
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    console.log(input);
+    try {
+      const response = await axios.post(`${MainUrl}/login`, input, {
+        headers: {
+          "Content-Type" : "application/json"
+        },
+        withCredentials : true,
+      })
+
+      console.log("response in sinup", response)
+      if(response.data.success){
+        navigate("/");
+      }
+    } catch (err) {
+      console.log("errr", err)
+    }
+  };
+
   return (
     <>
       <section className='page-title-box'>
@@ -35,8 +72,8 @@ const Login = () => {
           </div>
         </div>
       </section>
-      <div class='position-relative'>
-        <div class='shape'>
+      <div className='position-relative'>
+        <div className='shape'>
           <svg viewBox='0 0 1440 250'>
             <path
               fill=''
@@ -46,58 +83,71 @@ const Login = () => {
           </svg>
         </div>
       </div>
-      <section className='sidebar-page-container  '>
+      <section className='sidebar-page-container'>
         <div className='container'>
           <div className='row clearfix'>
             <div className='col-lg-12 col-md-12 col-sm-12 content-side'>
               <div className='blog-details-content'>
                 <div className='page-content'>
                   <form
+                    onSubmit={submitHandler}
                     name='loginform'
                     id='loginform'
-                    action='https://listit.smartdemowp.com/wp-login.php'
-                    method='post'
                   >
                     <p className='login-username form-group'>
-                      <label for='user_login'>Username or Email</label>
+                      <label htmlFor='user_login'>Username or Email</label>
                       <input
-                        type='text'
-                        name='log'
+                        type='email'
+                        value={input.email}
+                        name='email'
+                        onChange={changeEventHandler}
                         id='user_login'
                         className='input form-control'
                         placeholder='Username or Email'
-                        value=''
-                        size='20'
+                        size='30'
+                        autoComplete='email'
                       />
                     </p>
                     <p className='login-password form-group'>
-                      <label for='user_pass'>Password</label>
+                      <label htmlFor='user_pass'>Password</label>
                       <input
                         type='password'
-                        name='pwd'
+                        value={input.password}
+                        name='password'
+                        onChange={changeEventHandler}
                         id='user_pass'
                         className='input form-control'
                         placeholder='Password'
-                        value=''
-                        size='20'
+                        size='30'
+                        autoComplete='current-password'
                       />
                     </p>
                     <p className='login-remember'>
                       <label>
                         <input
-                          name='rememberme'
+                          name='role'
                           type='checkbox'
+                          value='student'
+                          checked={input.role === 'student'}
+                          onChange={changeEventHandler}
                           id='rememberme'
                         />{' '}
                         Students
                       </label>
                       <label>
-                        <input name='rememberme' type='checkbox' id='' />{' '}
+                        <input
+                          name='role'
+                          type='checkbox'
+                          value='recruiter'
+                          checked={input.role === 'recruiter'}
+                          onChange={changeEventHandler}
+                          id='rememberme'
+                        />{' '}
                         Recruiter
                       </label>
                     </p>
                     <p>
-                      Don't have an account! <a href='#'>Signup</a>
+                      Don't have an account? <a href='#'>Signup</a>
                     </p>
                     <p className='login-submit'>
                       <input
@@ -116,7 +166,7 @@ const Login = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

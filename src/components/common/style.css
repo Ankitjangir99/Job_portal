@@ -27,6 +27,7 @@
   height: auto;
 } */
 .btn-box {
+  width: 20%;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -129,4 +130,12 @@
 }
 .primary-link h5 {
   color: #ec385a;
+}
+
+
+.user-div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
